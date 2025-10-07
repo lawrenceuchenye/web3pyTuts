@@ -1,0 +1,36 @@
+type MonadUSDC_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type MonadUSDC_RoleAdminChanged {
+  id: ID!
+  role: String!
+  previousAdminRole: String!
+  newAdminRole: String!
+}
+
+type MonadUSDC_RoleGranted {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type MonadUSDC_RoleRevoked {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type MonadUSDC_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+  block_number: Int!
+  timestamp: Int!
+}
